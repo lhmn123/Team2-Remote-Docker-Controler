@@ -1,5 +1,5 @@
 # Đồ án môn học: ĐIỆN TOÁN ĐÁM MÂY
-## Nhóm 2: Sử dụng docker để ảo hoá server Ubuntu
+## Nhóm 25: Sử dụng docker để ảo hoá server Ubuntu
 ### Thành viên:
 - Lê Hoàng Mai Ngân - 19110245
 - Dương Hoàng Thy Trân - 19110300
