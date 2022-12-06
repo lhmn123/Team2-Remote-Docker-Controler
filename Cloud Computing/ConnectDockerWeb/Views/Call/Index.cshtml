@@ -11,19 +11,22 @@
 <html>
 <head style="text-align: center">
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Group 25 | Docker </title>
+    <link rel="shortcut icon" href="https://o.remove.bg/downloads/7121b97f-1a57-493d-aff0-2eda5f7a2788/Whale-Logo332_5-removebg-preview.png" type="image">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-   
+
     <style type="text/css">
         body, html, input, button {
             font-family: 'Quicksand', sans-serif;
             /*background-attachment: fixed;*/
         }
+
         body {
             /* background: url(https://collabnix.com/wp-content/uploads/2021/07/docker.png);
             background-size: cover;*/
             background-color: #253238;
+            height: 100vh;
         }
 
         .container {
@@ -32,30 +35,31 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            height: 80vh;
         }
 
         header {
-            padding: 10px 0px;
-            box-shadow: 0px 3px 3px -2px #2980b9;
+            padding: 50px 0px;
+            /* box-shadow: 0px 3px 3px -2px #2980b9;*/
         }
 
-        .button-group button{
+        .button-group button {
             width: 80%;
             align-items: center;
         }
+
         .btn-create {
             border: 1px solid #2980b9;
             background-color: #2980b9;
             color: white;
         }
-        .btn-create:hover {
-            border: 1px solid #2980b9;
-            background-color: #3498db;
-            color: white;
-        }
 
-       /* .btn-cmd:hover {
+            .btn-create:hover {
+                border: 1px solid #3498db;
+                background-color: #3498db;
+                color: white;
+            }
+
+        /* .btn-cmd:hover {
             border: 1px solid #2980b9;
             background-color: #3498db;
             color: white;
@@ -85,7 +89,17 @@
             color: white;
         }
 
+        .btn-potainer {
+            border: 1px solid #2980b9;
+            background-color: #2980b9;
+            color: white;
+        }
 
+            .btn-potainer:hover {
+                border: 1px solid #3498db;
+                background-color: #3498db;
+                color: white;
+            }
     </style>
 </head>
 <body>
@@ -96,26 +110,26 @@
             </h1>
         </div>
     </header>
-    <div class="container" style="padding: 100px 0px;">
+    <div class="container" style="padding: 10px 0px;">
         <div style="width: 100%; box-shadow: 0 2px 20px #2980b9; padding: 50px; border-radius: 5px; display: flex; justify-content: space-between; padding: 50px 30px">
-            <div style="width: 47%; box-shadow: 0 2px 20px rgb(0 0 0 / 16%); padding: 30px; border-radius: 5px; " class="d-left">
+            <div style="width: 49%; box-shadow: 0 2px 20px rgb(0 0 0 / 16%); padding: 30px; border-radius: 5px; " class="d-left">
                 <div style="font-weight: 700; color: #333; font-size: 21px; color: white">Khởi động container</div>
                 <form action="/Call/Start" method="post">
 
                     <div class="dropdown" style="margin-top: 60px; display: flex; align-items: center; justify-content: space-between">
                         <select style="width: 48%" name="numberRAMs" class="form-select">
                             <option selected>Chọn số RAMs</option>
-                            <option value="1">RAMs: 1 GB</option>
-                            <option value="2">RAMs: 2 GB</option>
-                            <option value="3">RAMs: 3 GB</option>
-                            <option value="4">RAMs: 4 GB</option>
+                            <option value="1GB">RAMs: 1 GB</option>
+                            <option value="2GB">RAMs: 2 GB</option>
+                            <option value="3GB">RAMs: 3 GB</option>
+                            <option value="4GB">RAMs: 4 GB</option>
                         </select>
                         <select style="width: 48%" name="numberCPUs" class="form-select">
                             <option selected>Chọn số CPUs</option>
-                            <option value="1.0">CPUs: 1</option>
-                            <option value="2.0">CPUs: 2</option>
-                            <option value="3.0">CPUs: 3</option>
-                            <option value="4.0">CPUs: 4</option>
+                            <option value="1">CPUs: 1</option>
+                            <option value="2">CPUs: 2</option>
+                            <option value="3">CPUs: 3</option>
+                            <option value="4">CPUs: 4</option>
                         </select>
                     </div>
 
@@ -130,7 +144,7 @@
                 <img  src="https://alphaville.github.io/optimization-engine/img/docker.gif"/>
             </div>
             @*Button-feature*@
-            <div style="width: 47%; box-shadow: 0 2px 20px rgb(0 0 0 / 16%); padding: 30px; border-radius: 5px;" class="d-right">
+            <div style="width: 45%; box-shadow: 0 2px 20px rgb(0 0 0 / 16%); padding: 30px; border-radius: 5px;" class="d-right">
                 <div style="font-weight: 700; font-size: 21px; color: white">Chức năng</div>
                 <div class="button-group" style="margin-top: 30px; align-items: center; display: flex; flex-direction: column">
                     <form action="/Call/Stop" method="post" style="width: 80%;">
@@ -145,6 +159,25 @@
                     <form action="/Call/SeeStats" method="post" style="width: 80%;">
                         <input type="submit" value="Docker stats" style="margin-top: 20px; width: 100%;" class="btn-dockerstats btn btn-light">
                     </form>
+
+                    @if (ViewBag.Link != null)
+                    {
+                        <div style=" display: flex; justify-content: space-between; align-items:center; margin-top: 20px" >
+                            <div class="form-group" style="margin-right: 2px">
+                                <a href="@ViewBag.Link" target="_blank" class="btn-potainer btn btn-primary">Open Portainer</a>
+                            </div>
+                            <div class="form-group" style="margin-left: 2px">
+                                <a href="/Call/ClosePortainer"><input type="submit" class="btn-potainer btn btn-primary" value="Close Portainer" /></a>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="form-group" style="margin-top: 20px; align-items:start; text-align: start">
+                            <a href="/Call/DeployPortainer"><input type="submit" class="btn-potainer btn btn-primary" value="Open Portainer" /></a>
+                        </div>
+                    }
+
                 </div>
                 <!-- Modal -->
                 @*CMD*@
@@ -157,14 +190,14 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="input-group mb-3" style="margin-top: 20px">
-                                        <input type="text" class="form-control" placeholder="Nhập lệnh...." aria-describedby="button-addon2">
-                                        <button class="btn-cmd btn btn-outline-secondary" type="button" id="button-addon2">Thực hiện lệnh</button>
-                                    </div>
-                                    <form>
-                                        <div class="mb-3">
-                                            <textarea style="height: 350px; background-color: #333; color: white" class="form-control" id="message-text"></textarea>
+                                    <form action="/Call/Test" method="post">
+                                        <div class="input-group mb-3" style="margin-top: 20px">
+                                            <input type="text" name="code" class="form-control" placeholder="Nhập lệnh...." aria-describedby="button-addon2">
+                                            <input type="submit" name="command" value="Thực hiện lệnh" class="btn-cmd btn btn-outline-secondary" id="button-addon2">
                                         </div>
+                                            <div class="mb-3">
+                                                <textarea style="height: 350px; background-color: #333; color: white" class="form-control" id="message-text">@ipconfig</textarea>
+                                            </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">

@@ -200,7 +200,6 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Call\Index.cshtml" />
-    <Content Include="Views\Call\Test.cshtml" />
     <Content Include="Views\Call\SeeImage.cshtml" />
   </ItemGroup>
   <ItemGroup>
