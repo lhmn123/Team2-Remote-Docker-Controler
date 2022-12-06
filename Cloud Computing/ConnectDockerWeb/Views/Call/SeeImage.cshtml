@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+    string Image = ViewBag.Image;
+    string Container = ViewBag.Container;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SeeImage</title>
+</head>
+<body>
+    <div>
+        <div>
+            <center>
+                <p>Image</p>
+                <textarea style="width: 100%; height: 400px">@Image</textarea>
+            </center>
+            <center>
+                <p>Container</p>
+                <textarea style="width: 100%; height: 400px">@Container</textarea>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
