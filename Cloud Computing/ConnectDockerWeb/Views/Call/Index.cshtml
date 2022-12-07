@@ -26,19 +26,26 @@
             /* background: url(https://collabnix.com/wp-content/uploads/2021/07/docker.png);
             background-size: cover;*/
             background-color: #253238;
-            height: 100vh;
         }
 
         .container {
             max-width: 1150px;
-            margin: auto;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
+           
+            /* width: 1120px;*/
+            /* align-items: center;
+            justify-content: center;
+            text-align: center;*/
         }
 
         header {
-            padding: 50px 0px;
+           /* padding: 30px 0px;*/
             /* box-shadow: 0px 3px 3px -2px #2980b9;*/
         }
 
@@ -103,15 +110,13 @@
     </style>
 </head>
 <body>
-    <header>
-        <div className="title" style="margin: 30px 0px; text-align: center; align-items: center;">
+    <div class="container">
+        <div className="title" style=" margin: 0px 0px 50px 0px; text-align: center; align-items: center;">
             <h1 style="color: #2980b9; font-weight: bold;">
                 SỬ DỤNG DOCKER ĐỂ ẢO HÓA UBUNTU
             </h1>
         </div>
-    </header>
-    <div class="container" style="padding: 10px 0px;">
-        <div style="width: 100%; box-shadow: 0 2px 20px #2980b9; padding: 50px; border-radius: 5px; display: flex; justify-content: space-between; padding: 50px 30px">
+        <div style=" width:100%; box-shadow: 0 2px 20px #2980b9; border-radius: 5px; display: flex; justify-content: space-between; padding: 50px 30px">
             <div style="width: 49%; box-shadow: 0 2px 20px rgb(0 0 0 / 16%); padding: 30px; border-radius: 5px; " class="d-left">
                 <div style="font-weight: 700; color: #333; font-size: 21px; color: white">Khởi động container</div>
                 <form action="/Call/Start" method="post">
@@ -141,7 +146,7 @@
                 </form>
             </div>
             <div>
-                <img  src="https://alphaville.github.io/optimization-engine/img/docker.gif"/>
+                <img src="https://alphaville.github.io/optimization-engine/img/docker.gif" />
             </div>
             @*Button-feature*@
             <div style="width: 45%; box-shadow: 0 2px 20px rgb(0 0 0 / 16%); padding: 30px; border-radius: 5px;" class="d-right">
@@ -162,7 +167,7 @@
 
                     @if (ViewBag.Link != null)
                     {
-                        <div style=" display: flex; justify-content: space-between; align-items:center; margin-top: 20px" >
+                        <div style=" display: flex; justify-content: space-between; align-items:center; margin-top: 20px">
                             <div class="form-group" style="margin-right: 2px">
                                 <a href="@ViewBag.Link" target="_blank" class="btn-potainer btn btn-primary">Open Portainer</a>
                             </div>
@@ -195,9 +200,9 @@
                                             <input type="text" name="code" class="form-control" placeholder="Nhập lệnh...." aria-describedby="button-addon2">
                                             <input type="submit" name="command" value="Thực hiện lệnh" class="btn-cmd btn btn-outline-secondary" id="button-addon2">
                                         </div>
-                                            <div class="mb-3">
-                                                <textarea style="height: 350px; background-color: #333; color: white" class="form-control" id="message-text">@ipconfig</textarea>
-                                            </div>
+                                        <div class="mb-3">
+                                            <textarea style="height: 350px; background-color: #333; color: white" class="form-control" id="message-text">@ipconfig</textarea>
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
